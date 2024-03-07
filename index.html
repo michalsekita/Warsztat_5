@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:wght@100..900&display=swap" rel="stylesheet">
 
 </head>
 <body>
@@ -33,10 +33,9 @@ Sell More!
     <p>Open shop on our platform and increase your sales
     </p>
     <a href="#">Open your shop</a>
-</section>
-    <div class="img-first">
-<img src="./Images/Background.png">
-    </div>
+        <img src="Images/Background.png" class="img-first">
+    </section>
+
 <section class="stat">
     <div class="stat-title">
     <h2>
@@ -189,38 +188,44 @@ Pricing
     </div>
 
 </section>
-<section>
-    <div>
+<section class="form">
+    <div class="form-left">
     <h2>Any questions?</h2>
-        <p>Leave your email address or call us</p>
-        <div>
-        <div>
+        <p class="form-left-txt">Leave your email address or call us</p>
+        <div class="form-left-emtel">
             <img src="./Images/Mail-Icon.svg">
             <p>info@bestshop.xyx</p>
-        </div>
-        <div>
             <img src="./Images/Phone-Icon.svg">
             <p>123 456 789</p>
         </div>
-        </div>
     </div>
     <div>
-    <form>
-        <label for="Name">Name</label>
-        <input type="text" id="Name"/>
-        <label for="EMAIL">EMAIL</label>
-        <input type="email" id="EMAIL"/>
-        <label><input type="checkbox" name="zgoda" value="0">I hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment process under the European Parliament’s and Council of the European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (Data Protection Directive)
-        </label>
+    <form class="form-right">
+        <label for="Name" class="form-right-lab">Name</label>
+        <input type="text" id="Name" class="form-right-place-name"/>
+        <label for="EMAIL" class="form-right-lab">EMAIL</label>
+        <input type="email" id="EMAIL" class="form-right-place-email"/>
+        <div class="form-right-chbox">
+            <div>
+                <label><input type="checkbox" name="zgoda" value="0" class="form-right-chbox-box">
+                </label>
+            </div>
+            <div class="form-right-chbox-desc">
+                I hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment process under the European Parliament’s and Council of the European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (Data Protection Directive)
+            </div>
+        </div>
+        <div class="form-right-send">
+        <a href="#" class="form-right-btn">Send</a>
+        </div>
     </form>
     </div>
 </section>
-<footer>
-    <div>
-    <p>BestShop</p>
-        <p>&copy 2019 BestShop LTD. All Rights Reserved</p>
+<footer class="footer">
+    <div class="footer-info">
+    <p class="footer-title">BestShop</p>
+        <p class="footer-ARR">&copy 2019 BestShop LTD. All Rights Reserved</p>
     </div>
-    <div>
+    <div class="footer-sm">
     <img src="./Images/Twitter.svg">
         <img src="./Images/Facebook.svg">
     </div>
